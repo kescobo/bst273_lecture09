@@ -17,14 +17,14 @@ args = parser.parse_args( )
 
 fh = open(args.data_file)
 
-print("the file handle is", fh)
-
 lines = 0
 words = 0
 chars = 0
 
 for line in fh:
-	print(line)
+	lines += 1
+
+print(lines)
 #-------------------------------------------------------------------------------
 # our code for analyzing the data
 #-------------------------------------------------------------------------------
