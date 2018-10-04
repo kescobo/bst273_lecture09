@@ -15,9 +15,20 @@ parser.add_argument(
 
 args = parser.parse_args( )
 
-print(args)
-print(args.data_file)
+#print(args)
+#print(args.data_file)
 
+infile = open(args.data_file)   #this is how we hold on to file
+print("the file handle is" infile)
+
+lines = 0
+words = 0
+chars = 0
+
+#read file line by line
+for line in fh:
+	#print(line) if you want to check
+	
 
 
 
