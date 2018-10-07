@@ -6,8 +6,6 @@ Edit this file (`hw5.md`) to answer questions 1-3 and 6. Edit the file
 
 **Both files should be submitted to canvas when complete.**
 
-Points for question 7 will depend on making a pull request on github.
-
 After class on Thursday, you should have
 
 1. a remote **fork** of `kescobo/best273_lecture09` on your github account
@@ -56,7 +54,7 @@ $ # Enter command here
 # Enter output here
 ```
 
-## Question 3 (2 pts)
+## Question 3 (1 pt)
 
 In order to stay current with my repo - you need to set my repo as a remote.
 You won't be able to push changes to my repo directly, but you can pull changes
@@ -75,4 +73,38 @@ Assuming you haven't made any changes to your local master branch
 ```sh
 $ git checkout master # make sure you're on the master branch
 $ git pull kevin master # pull the latest commits from the master branch in my github repo
+```
+
+**NOTE:** If you have any errors or merge conflicts, you will have issues
+with the following steps. If this happens, do the following
+
+```sh
+$ git fetch kevin
+$ git reset --hard kevin master
+```
+
+## Question 4 (4 pts)
+
+Before continuing - make sure you have the latest version of `word_count.py`.
+This question should be included (starting at line 27).
+
+The current version of our `word_count.py` counts and prints the number of lines.
+The next step is to get and print the number of words. According to our
+[class notes](class_notes.md), the way to do this is:
+2. to count the number of words, use `.split()` on the line, then use `len()` on the list that's returned
+      1. don't forget to add that number to the `words` variable!
+
+***Edit `word_count.py` to count the number of words in each line,***
+***and add that number to the `words` variable.***
+***Be sure to print the number of words.***
+
+You can test that this works by running the test script. You should see the
+following:
+
+```sh
+$ python test_word_count.py test_files/constitution.txt
+Here is the result from running command-line <wc>:
+     872    7652   45119 test_files/constitution.txt
+Here is the result from running your python <wc>:
+     872    7652
 ```
