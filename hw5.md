@@ -83,7 +83,7 @@ $ git fetch kevin
 $ git reset --hard kevin master
 ```
 
-## Question 4 (4 pts)
+## Question 4a (2 pts)
 
 Before continuing - make sure you have the latest version of `word_count.py`.
 This question should be included (starting at line 27).
@@ -108,3 +108,53 @@ Here is the result from running command-line <wc>:
 Here is the result from running your python <wc>:
      872    7652
 ```
+
+## Question 4b (2 pts)
+
+The last step is to get the number of bytes (characters). According to our
+notes, to do this:
+
+1. to count the number of bytes, use `len()` on the line string itself
+ 1. don't forget to add that number to the `bytes` variable!
+
+***Edit `word_count.py` to count the number of bytes in each line,***
+***and add that number to the `chars` variable.***
+***Be sure to print the number of characters.***
+
+You can test that this works by running the test script. You should see the
+following:
+
+```sh
+$ python test_word_count.py test_files/constitution.txt
+Here is the result from running command-line <wc>:
+     872    7652   45119 test_files/constitution.txt
+Here is the result from running your python <wc>:
+     872    7652   45119
+```
+
+
+## Question 5 (4 pts)
+
+The `wc` utility has a number of options that enable one to get **only**
+lines, **only** words, or **only** bytes. Eg.
+
+```sh
+$ wc -l test_files/constitution.txt
+     872 test_files/constitution.txt
+```
+
+Add the additional command line arguments `-l`, `-w`, and `-c` options using
+`argparse` to print just `lines`, `words` and `chars` respectively.
+You should be able to run the following commands, and get the outputs shown.
+
+```sh
+$ python word_count.py -c test_files/constitution.txt
+45119
+$ python word_count.py -w test_files/constitution.txt
+7652
+$ python word_count.py -l test_files/constitution.txt
+872
+```
+
+**Hint:** - even though this question is at the end of the homework script,
+you probably need to add some stuff to the beginning of the script too.
