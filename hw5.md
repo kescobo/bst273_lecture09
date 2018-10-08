@@ -79,7 +79,7 @@ $ git reset --hard kevin master
 ## Question 4a (3 pts)
 
 Before continuing - make sure you have the latest version of `word_count.py`.
-This question should be included (starting at line 27).
+This question should be included (starting at line 63).
 
 The current version of our `word_count.py` counts and prints the number of lines.
 The next step is to get and print the number of words. According to our
