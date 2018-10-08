@@ -1,10 +1,9 @@
 # Homework 5
 
-Unlike previous homeworks, this week's homework will be submitted in two parts.
-Edit this file (`hw5.md`) to answer questions 1-3 and 6. Edit the file
-`word_count.py` to answer questions 4 and 5.
-
-**Both files should be submitted to canvas when complete.**
+In this assignment, you will complete our python `wc` clone, and learn more
+about using git and github to collaborate. This file contains instructions
+for each question, but you should submit your answers to questions 1-3
+inside the indicated parts of `word_count.py`
 
 After class on Thursday, you should have
 
@@ -15,23 +14,22 @@ After class on Thursday, you should have
 In the questions below, ***bold italic*** text indicates instructions to
 perform or questions to answer for credit.
 
-Note - `<!-- This is the syntax for a comment in this type of document -->`.
-
 ## Question 1 (2 pts)
 
 Open a terminal and change directories into your local git repo.
 Use `git branch` to determine what branches are found locally.
+Enter the answers to the following questions into the indicated location
+in `word_count.py`
 
-***Enter the output in the code block below:***
+***What is the output of the following command?***
 
 ```sh
 $ git branch
-# enter the output here
 ```
 
 ***How can you tell which branch you're on?***
 
-<!-- Put your answer here -->
+
 
 ## Question 2 (2 pts)
 
@@ -47,12 +45,7 @@ Investigate your remote(s) using `git remote` at the command line.
 Use `git remote --help` to see what you can do with this command.
 
 ***Determine what the url of your current remote is.***
-***Enter the command and output in the code block below.***
-
-```sh
-$ # Enter command here
-# Enter output here
-```
+***Enter the command used and the output in the indicated place in `word_count.py`***
 
 ## Question 3 (1 pt)
 
@@ -64,7 +57,7 @@ to your local repo.
 ***https://github.com/kescobo/bst273_lecture09.git***
 
 ```sh
-$ git remote add # Put in the command here
+$ git remote add # What goes here?
 ```
 
 Assuming you haven't made any changes to your local master branch

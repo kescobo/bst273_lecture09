@@ -1,5 +1,41 @@
 #!/usr/bin/env python
 
+"""
+============
+Instructions
+============
+
+The prompts for hw5 can be found in the hw5.md file on the master branch of the
+bst273_lecture09 repository. Answer questions 1-3 inside this multi-line string
+where indicated
+
+QUESTION 1:
+
+What is the output of the `git branch` command?
+----------
+<paste answer here>
+----------
+
+How can you tell which branch you're on?
+----------
+<type answer here>
+----------
+
+QUESTION 2:
+
+----------
+$ <enter command here>
+<enter output here>
+----------
+
+QUESTION 3:
+
+----------
+$ git remote add <What goes here?>
+----------
+
+"""
+
 import argparse
 
 parser = argparse.ArgumentParser( description="" )
