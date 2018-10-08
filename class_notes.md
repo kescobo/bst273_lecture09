@@ -42,5 +42,6 @@ In class, here's what we came up with:
     3. to count the number of bytes, use `len()` on the line string itself
         1. don't forget to add that number to the `bytes` variable!
 5. Once we've read through the file, print the values of `lines`, `words`, and `bytes` to the screen
+6. Close the file
 
 ### Step 3: Start translating your plan into python syntax
