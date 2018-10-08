@@ -14,7 +14,7 @@ After class on Thursday, you should have
 In the questions below, ***bold italic*** text indicates instructions to
 perform or questions to answer for credit.
 
-## Question 1 (2 pts)
+## Question 1 (4 pts)
 
 Open a terminal and change directories into your local git repo.
 Use `git branch` to determine what branches are found locally.
@@ -31,7 +31,7 @@ $ git branch
 
 
 
-## Question 2 (2 pts)
+## Question 2 (4 pts)
 
 Since you cloned your local repo from your fork of Kevin's repo on github,
 your local repo knows about your fork.
@@ -47,7 +47,7 @@ Use `git remote --help` to see what you can do with this command.
 ***Determine what the url of your current remote is.***
 ***Enter the command used and the output in the indicated place in `word_count.py`***
 
-## Question 3 (1 pt)
+## Question 3 (2 pt)
 
 In order to stay current with my repo - you need to set my repo as a remote.
 You won't be able to push changes to my repo directly, but you can pull changes
@@ -76,7 +76,7 @@ $ git fetch kevin
 $ git reset --hard kevin master
 ```
 
-## Question 4a (2 pts)
+## Question 4a (3 pts)
 
 Before continuing - make sure you have the latest version of `word_count.py`.
 This question should be included (starting at line 27).
@@ -102,7 +102,7 @@ Here is the result from running your python <wc>:
      872    7652
 ```
 
-## Question 4b (2 pts)
+## Question 4b (3 pts)
 
 The last step is to get the number of bytes (characters). According to our
 notes, to do this:
@@ -126,7 +126,7 @@ Here is the result from running your python <wc>:
 ```
 
 
-## Question 5 (4 pts)
+## Question 5 (9 pts)
 
 The `wc` utility has a number of options that enable one to get **only**
 lines, **only** words, or **only** bytes. Eg.
@@ -150,4 +150,4 @@ $ python word_count.py -l test_files/constitution.txt
 ```
 
 **Hint:** - even though this question is at the end of the homework script,
-you probably need to add some stuff to the beginning of the script too.
+you probably need to add some logical flags to the beginning of the script too.
